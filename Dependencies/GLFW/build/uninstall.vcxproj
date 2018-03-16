@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17F6AE62-C3DA-3C83-AF52-2F7E3B2DA726}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>uninstall</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" "-HP:/Projects/C++/Polygon Engine/Dependencies/GLFW" "-BP:/Projects/C++/Polygon Engine/Dependencies/GLFW/build" --check-stamp-file "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindThreads.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMake\modules\FindVulkan.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindDoxygen.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3Config.cmake.in;P:\Program Files\CMake\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw_config.h.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3.pc.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\cmake_uninstall.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" "-HP:/Projects/C++/Polygon Engine/Dependencies/GLFW" "-BP:/Projects/C++/Polygon Engine/Dependencies/GLFW/build" --check-stamp-file "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindThreads.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMake\modules\FindVulkan.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindDoxygen.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3Config.cmake.in;P:\Program Files\CMake\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw_config.h.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3.pc.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\cmake_uninstall.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" "-HP:/Projects/C++/Polygon Engine/Dependencies/GLFW" "-BP:/Projects/C++/Polygon Engine/Dependencies/GLFW/build" --check-stamp-file "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindThreads.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMake\modules\FindVulkan.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindDoxygen.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3Config.cmake.in;P:\Program Files\CMake\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw_config.h.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3.pc.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\cmake_uninstall.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" "-HP:/Projects/C++/Polygon Engine/Dependencies/GLFW" "-BP:/Projects/C++/Polygon Engine/Dependencies/GLFW/build" --check-stamp-file "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/CMakeLists.txt;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystem.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInitialize.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerId.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCompilerIdDetection.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ADSP-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\ARMCC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\AppleClang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Borland-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Cray-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GHS-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\GNU-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\HP-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IAR-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Intel-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\MSVC-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PGI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\PathScale-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SCO-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TI-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\Watcom-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\XL-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\zOS-C-DetermineCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CompilerId\VS-10.vcxproj.in;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeFindBinUtils.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeSystemSpecificInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeGenericSystem.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\WindowsPaths.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeLanguageInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC-C.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\Platform\Windows-MSVC.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeRCInformation.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestRCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCommonLanguageInclude.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeTestCompilerCommon.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompilerABI.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeParseImplicitLinkInfo.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeDetermineCompileFeatures.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompiler.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\3.10.2\CMakeCCompiler.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindThreads.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckLibraryExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckSymbolExists.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFile.c.in;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMake\modules\FindVulkan.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindDoxygen.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageHandleStandardArgs.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\FindPackageMessage.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\CMakePackageConfigHelpers.cmake;P:\Program Files\CMake\share\cmake-3.10\Modules\WriteBasicConfigVersionFile.cmake;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3Config.cmake.in;P:\Program Files\CMake\share\cmake-3.10\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw_config.h.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\src\glfw3.pc.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\cmake_uninstall.cmake.in;P:\Projects\C++\Polygon Engine\Dependencies\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\9e623b986fd5cd1ce82ca1818b096493\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" -P "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/9e623b986fd5cd1ce82ca1818b096493/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" -P "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/9e623b986fd5cd1ce82ca1818b096493/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" -P "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/9e623b986fd5cd1ce82ca1818b096493/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"P:\Program Files\CMake\bin\cmake.exe" -P "P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/cmake_uninstall.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">P:/Projects/C++/Polygon Engine/Dependencies/GLFW/build/CMakeFiles/9e623b986fd5cd1ce82ca1818b096493/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\build\ZERO_CHECK.vcxproj">
+      <Project>{85A53767-6199-3794-88DC-6833E3D54218}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\tests\gamma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\deps\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\deps\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\deps\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\deps\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="P:\Projects\C++\Polygon Engine\Dependencies\GLFW\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8134FE83-D1C0-3970-848C-7C0A1A8F8C14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{FAE97273-A2A2-3B73-BFE7-1D542BF1FCFA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
