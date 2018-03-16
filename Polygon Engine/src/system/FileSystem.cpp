@@ -20,12 +20,12 @@ namespace engine {
 			return out;
 		}
 
-		std::string FileSystem::ReadText(const Path& path) const {
-			char* out;
-			File* file = Open(path, Mode::READ | Mode::BINARY);
-			out = (char*)file->Read();
-			file->Close();
-
-			return out;
-		}
+		//std::string FileSystem::ReadText(const Path& path) const {
+		//	char* out;
+		//	File* file = Open(path, Mode::READ | Mode::BINARY);
+		//	out = (char*)file->Read();
+		//	file->Close();
+		//
+		//	return out;
+		//}
 } }
