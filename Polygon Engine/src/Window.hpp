@@ -2,15 +2,17 @@
 #include <glad\glad.h>
 #include <GLFW\glfw3.h>
 #include <stdio.h>
+#include "InputHandler.hpp"
 
 namespace engine {
-	namespace graphics {
 
 		class Window {
 
 			GLFWwindow* m_Window;
 			int m_Width, m_Height;
 			const char* m_Title;
+			InputHandler* m_InputHandler;
+
 		public: 
 			Window(const char* title, unsigned int width, unsigned int height);
 
@@ -26,9 +28,11 @@ namespace engine {
 
 			inline const char* GetTitle() const { return m_Title; }
 
+			inline const InputHandler* GetInputHandler() const { return m_InputHandler;  }
+
 		private:
 			friend void Error_Callback(int error, const char* description);
 
 			void Init();
 		};
-} }
+}

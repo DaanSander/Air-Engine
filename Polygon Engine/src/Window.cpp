@@ -1,7 +1,6 @@
 #include "Window.hpp"
 
 namespace engine {
-	namespace graphics {
 
 		void Error_Callback(int error, const char* description);
 		
@@ -15,6 +14,8 @@ namespace engine {
 		Window::~Window() {
 			glfwDestroyWindow(m_Window);
 			glfwSetErrorCallback(NULL);
+
+			delete m_InputHandler;
 		}
 
 		void Window::Init() {
@@ -40,14 +41,17 @@ namespace engine {
 			glfwMakeContextCurrent(m_Window);
 			gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 			glfwSwapInterval(1);
+			
+			m_InputHandler = new InputHandler(m_Window);
 		}
 
 		void Window::Update() const {
 			glfwSwapBuffers(m_Window);
+			m_InputHandler->Update();
 			glfwPollEvents();
 		}
 
 		void Error_Callback(int error, const char* description) {
 			fprintf(stderr, "Error: %s\n", description);
 		}
-} }
+}

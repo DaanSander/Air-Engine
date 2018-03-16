@@ -1,17 +1,18 @@
 #include <iostream>
-#include "graphics\Window.hpp"
+#include "Window.hpp"
 #include "math\Vector2.hpp"
 #include "math\Matrix4.hpp"
 #include "math\Matrix2.hpp"
 #include "system\Path.hpp"
 #include "system\File.hpp"
+#include "Common.h"
 
 //TODO Async files
 //TODO Create custom STL library 
+//TODO Better buffers managing glVertexAttribPointer etc
 
 int main() {
 	using namespace engine;
-	using namespace graphics;
 	using namespace math;
 	using namespace system;
 

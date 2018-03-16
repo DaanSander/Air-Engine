@@ -124,20 +124,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\graphics\buffers\VertexBuffer.cpp" />
     <ClCompile Include="src\graphics\Shader.cpp" />
     <ClCompile Include="src\graphics\buffers\VertexArray.cpp" />
-    <ClCompile Include="src\graphics\Window.cpp" />
+    <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\system\BaseFile.cpp" />
     <ClCompile Include="src\system\File.cpp" />
     <ClCompile Include="src\system\FileSystem.cpp" />
+    <ClCompile Include="src\InputHandler.cpp" />
     <ClCompile Include="src\system\Path.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Common.h" />
     <ClInclude Include="src\graphics\Shader.hpp" />
     <ClInclude Include="src\graphics\buffers\VertexArray.hpp" />
     <ClInclude Include="src\graphics\buffers\VertexBuffer.hpp" />
-    <ClInclude Include="src\graphics\Window.hpp" />
+    <ClInclude Include="src\Window.hpp" />
     <ClInclude Include="src\math\Matrix2.hpp" />
     <ClInclude Include="src\math\Matrix3.hpp" />
     <ClInclude Include="src\math\Matrix4.hpp" />
@@ -147,6 +150,7 @@
     <ClInclude Include="src\system\BaseFile.hpp" />
     <ClInclude Include="src\system\File.hpp" />
     <ClInclude Include="src\system\FileSystem.hpp" />
+    <ClInclude Include="src\InputHandler.hpp" />
     <ClInclude Include="src\system\Path.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
