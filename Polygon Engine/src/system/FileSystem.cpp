@@ -3,7 +3,7 @@
 namespace engine {
 	namespace system {
 
-		File* FileSystem::Open(const Path& path, int mode) const {
+		File* FileSystem::Open(const Path& path, int32 mode) const {
 			return (new File(path))->Open(mode);
 		}
 

@@ -3,14 +3,15 @@
 #include <glad\glad.h>
 #include <vector>
 #include <unordered_map>
+#include "../DataTypes.h"
 
 namespace engine {
 	namespace graphics {
 
 		class Shader {
 
-			unsigned int m_ProgramID, m_VertexID, m_FragmentID;
-			std::unordered_map<std::string, unsigned int> m_UniformLocations;
+			uint32 m_ProgramID, m_VertexID, m_FragmentID;
+			std::unordered_map<std::string, uint32> m_UniformLocations;
 
 		public:
 			Shader(const std::string& vertexSource, const std::string& fragmentSource);
@@ -25,17 +26,17 @@ namespace engine {
 
 			void UnBind() const;
 
-			inline int GetProgramID() const { return m_ProgramID; }
+			inline int32 GetProgramID() const { return m_ProgramID; }
 
-			inline int GetVertexID() const { return m_VertexID; }
+			inline int32 GetVertexID() const { return m_VertexID; }
 
-			inline int GetFragmentID() const { return m_FragmentID; }
+			inline int32 GetFragmentID() const { return m_FragmentID; }
 
-			inline unsigned int GetUniformLocation(const std::string& name) { 
+			inline uint32 GetUniformLocation(const std::string& name) { 
 				return m_UniformLocations[name]; 
 			}
 
 		private:
-			int CompileShader(const char* source, int shaderType) const;
+			int32 CompileShader(const char* source, int32 shaderType) const;
 		};
 } }

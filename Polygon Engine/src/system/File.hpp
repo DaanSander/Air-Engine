@@ -14,7 +14,7 @@ namespace engine {
 
 			~File();
 
-			File* Open(int mode);
+			File* Open(int32 mode);
 
 			void Close() const;
 
@@ -22,7 +22,7 @@ namespace engine {
 
 			File* Write(const char* data);
 
-			File* Seek(int offset, const Origin& origin);
+			File* Seek(int32 offset, const Origin& origin);
 		};
 
 } }

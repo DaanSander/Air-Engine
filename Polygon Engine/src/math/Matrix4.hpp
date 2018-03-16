@@ -33,14 +33,14 @@ namespace engine {
 			}
 
 			Matrix4(const Matrix4<T>& matrix) {
-				for (int i = 0; i < 4 * 4; i++)
+				for (int32 i = 0; i < 4 * 4; i++)
 					m_Elements[i] = matrix.m_Elements[i];
 			}
 
 			Matrix4(T diagonal) {
 				memset(m_Elements, 0, sizeof(m_Elements));
 
-				for (int i = 0; i < 4; i++)
+				for (int32 i = 0; i < 4; i++)
 					m_Elements[i + i * 4] = diagonal;
 			}
 
@@ -284,8 +284,8 @@ namespace engine {
 			Matrix4<T> Transpose() const {
 				Matrix4<T> out;
 
-				for (unsigned int y = 0; y < 4; y++) {
-					for (unsigned int x = 0; x < 4; x++) {
+				for (uint32 y = 0; y < 4; y++) {
+					for (uint32 x = 0; x < 4; x++) {
 						out.m_Elements[y + x * 4] = out.m_Elements[x + y * 4];
 					}
 				}
@@ -296,7 +296,7 @@ namespace engine {
 			Matrix4<T> Negative() const {
 				Matrix4<T> out;
 
-				for (unsigned int i = 0; i < 4 * 4; i++)
+				for (uint32 i = 0; i < 4 * 4; i++)
 					out.m_Elements[i] = -m_Elements[i];
 
 				return out;
@@ -305,7 +305,7 @@ namespace engine {
 			Matrix4<T> Add(const Matrix4<T>& other) const {
 				Matrix4<T> out;
 
-				for (unsigned int i = 0; i < 4 * 4; i++)
+				for (uint32 i = 0; i < 4 * 4; i++)
 					out.m_Elements[i] = m_Elements[i] + other.m_Elements[i];
 
 				return out;
@@ -314,7 +314,7 @@ namespace engine {
 			Matrix4<T> Subtract(const Matrix4<T>& other) const {
 				Matrix4<T> out;
 
-				for (unsigned int i = 0; i < 4 * 4; i++)
+				for (uint32 i = 0; i < 4 * 4; i++)
 					out.m_Elements[i] = m_Elements[i] - other.m_Elements[i];
 
 				return out;
@@ -323,7 +323,7 @@ namespace engine {
 			Matrix4<T> Multiply(T scalar) const {
 				Matrix4<T> out;
 
-				for (unsigned int i = 0; i < (4 * 4); i++)
+				for (uint32 i = 0; i < (4 * 4); i++)
 					out.m_Elements[i] = m_Elements[i] * scalar;
 
 				return out;
@@ -332,9 +332,9 @@ namespace engine {
 			Matrix4<T> Multiply(const Matrix4<T>& other) const {
 				Matrix4<T> out;
 
-				for (unsigned int y = 0; y < 4; y++) {
-					for (unsigned int x = 0; x < 4; x++) {
-						for (unsigned int c = 0; c < 4; c++) {
+				for (uint32 y = 0; y < 4; y++) {
+					for (uint32 x = 0; x < 4; x++) {
+						for (uint32 c = 0; c < 4; c++) {
 							out.m_Elements[x + y * 4] += m_Elements[c + y * 4] * other.m_Elements[x + c * 4];
 						}
 					}
@@ -345,8 +345,8 @@ namespace engine {
 			Vector4<T> Multiply(const Vector4<T>& vector) const {
 				Vector4<T> out;
 
-				for (unsigned int y = 0; y < 4; y++) {
-					for (unsigned int x = 0; x < 4; x++) {
+				for (uint32 y = 0; y < 4; y++) {
+					for (uint32 x = 0; x < 4; x++) {
 						out.m_Elements[y] += m_Elements[x + y * 4] * vector.m_Elements[x];
 					}
 				}

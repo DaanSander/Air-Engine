@@ -11,7 +11,7 @@
 //TODO Create custom STL library 
 //TODO Better buffers managing glVertexAttribPointer etc
 
-int main() {
+int32 main() {
 	using namespace engine;
 	using namespace math;
 	using namespace system;

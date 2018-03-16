@@ -2,7 +2,7 @@
 
 namespace engine {
 
-	void OnKeyEvent(GLFWwindow* window, int key, int scancode, int action, int mods) {
+	void OnKeyEvent(GLFWwindow* window, int32 key, int32 scancode, int32 action, int32 mods) {
 		if (key > MAX_KEYS) return;
 
 		InputHandler* handler = (InputHandler*)glfwGetWindowUserPointer(window);
@@ -22,7 +22,7 @@ namespace engine {
 		}
 	}
 
-	void OnMouseEvent(GLFWwindow* window, int button, int action, int mods) {
+	void OnMouseEvent(GLFWwindow* window, int32 button, int32 action, int32 mods) {
 		if (button > MAX_BUTTONS) return;
 
 		InputHandler* handler = (InputHandler*)glfwGetWindowUserPointer(window);
@@ -60,7 +60,6 @@ namespace engine {
 	}
 
 	void InputHandler::Update() {
-		//TODO check if frames line up
 		memset(m_KeysPolled, 0, MAX_KEYS);
 		memset(m_ButtonsPolled, 0, MAX_BUTTONS);
 	}

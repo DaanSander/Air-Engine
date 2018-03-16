@@ -1,5 +1,6 @@
 #pragma once
 #include <glad\glad.h>
+#include "../../DataTypes.h"
 
 namespace engine {
 	namespace graphics {
@@ -10,14 +11,14 @@ namespace engine {
 		};
 
 		class VertexBuffer {
-			unsigned int m_ID;
+			uint32 m_ID;
 			BufferUsage m_Usage;
-			unsigned int m_Size;
+			uint32 m_Size;
 
 		public:
 			VertexBuffer(BufferUsage usage);
 			
-			VertexBuffer(BufferUsage usage, const void* data, unsigned int size);
+			VertexBuffer(BufferUsage usage, const void* data, uint32 size);
 
 			~VertexBuffer();
 			
@@ -25,12 +26,12 @@ namespace engine {
 
 			void UnBind() const;
 
-			void SetData(const void* data, unsigned int size);
+			void SetData(const void* data, uint32 size);
 
-			inline unsigned int GetID() const { return m_ID; }
+			inline uint32 GetID() const { return m_ID; }
 
 			inline BufferUsage GetBufferUsage() const { return m_Usage; }
 
-			inline unsigned int GetSize() const { return m_Size; }
+			inline uint32 GetSize() const { return m_Size; }
 		};
 } }

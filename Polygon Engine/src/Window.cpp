@@ -2,9 +2,9 @@
 
 namespace engine {
 
-		void Error_Callback(int error, const char* description);
+		void Error_Callback(int32 error, const char* description);
 		
-		Window::Window(const char* title, unsigned int width, unsigned int height) {
+		Window::Window(const char* title, uint32 width, uint32 height) {
 			m_Title = title;
 			m_Width = width;
 			m_Height = height;
@@ -51,7 +51,7 @@ namespace engine {
 			glfwPollEvents();
 		}
 
-		void Error_Callback(int error, const char* description) {
+		void Error_Callback(int32 error, const char* description) {
 			fprintf(stderr, "Error: %s\n", description);
 		}
 }

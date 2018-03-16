@@ -11,7 +11,7 @@ namespace engine {
 
 		}
 
-		BaseFile* BaseFile::Open(int mode) {
+		BaseFile* BaseFile::Open(int32 mode) {
 			return this;
 		}
 
@@ -27,7 +27,7 @@ namespace engine {
 			return this;
 		}
 
-		BaseFile* BaseFile::Seek(int offset, const Origin& origin) {
+		BaseFile* BaseFile::Seek(int32 offset, const Origin& origin) {
 			return this;
 		}
 } }

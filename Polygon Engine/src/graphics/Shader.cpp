@@ -32,16 +32,16 @@ namespace engine {
 			glUseProgram(0);
 		}
 
-		int Shader::CompileShader(const char* source, int shaderType) const {
-			int shaderID = glCreateShader(shaderType);
+		int32 Shader::CompileShader(const char* source, int32 shaderType) const {
+			int32 shaderID = glCreateShader(shaderType);
 
 			glShaderSource(shaderID, 1, &source, NULL);
 			glCompileShader(shaderID);
 
-			int status;
+			int32 status;
 			glGetShaderiv(shaderID, GL_COMPILE_STATUS, &status);
 			if(status == GL_FALSE) {
-				int length;
+				int32 length;
 				glGetShaderiv(shaderID, GL_INFO_LOG_LENGTH, &length);
 				
 				char* info_log = new char[length + 1];

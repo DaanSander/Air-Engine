@@ -5,6 +5,7 @@
 #include <vector>
 #include "Shlwapi.h"
 #include <sys/stat.h>
+#include "../DataTypes.h"
 
 namespace engine {
 	namespace system {

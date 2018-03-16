@@ -1,5 +1,6 @@
 #pragma once
 #include <glad\glad.h>
+#include "../../DataTypes.h"
 
 namespace engine {
 	namespace graphics {
@@ -7,7 +8,7 @@ namespace engine {
 		class VertexArray {
 
 		private:
-			unsigned int m_ID;
+			uint32 m_ID;
 
 		public:
 			VertexArray();
@@ -18,6 +19,6 @@ namespace engine {
 
 			void UnBind() const;
 
-			inline unsigned int GetID() const { return m_ID; }
+			inline uint32 GetID() const { return m_ID; }
 		};
 } }

@@ -8,7 +8,7 @@ namespace engine {
 			glGenBuffers(1, &m_ID);
 		}
 
-		VertexBuffer::VertexBuffer(BufferUsage usage, const void* data, unsigned int size) {
+		VertexBuffer::VertexBuffer(BufferUsage usage, const void* data, uint32 size) {
 			m_Usage = usage;
 
 			glGenBuffers(1, &m_ID);
@@ -27,7 +27,7 @@ namespace engine {
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 		}
 
-		void VertexBuffer::SetData(const void* data, unsigned int size) {
+		void VertexBuffer::SetData(const void* data, uint32 size) {
 			Bind();
 			glBufferData(GL_ARRAY_BUFFER, size, data, m_Usage);
 		}

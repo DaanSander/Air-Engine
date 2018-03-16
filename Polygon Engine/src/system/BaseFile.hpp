@@ -30,7 +30,7 @@ namespace engine {
 			virtual ~BaseFile() = 0;
 
 			//Can't read and write at the same time
-			virtual BaseFile* Open(int mode) = 0;
+			virtual BaseFile* Open(int32 mode) = 0;
 
 			virtual void Close() const = 0;
 
@@ -38,7 +38,7 @@ namespace engine {
 
 			virtual BaseFile* Write(const char* data) = 0;
 
-			virtual BaseFile* Seek(int offset, const Origin& origin) = 0;
+			virtual BaseFile* Seek(int32 offset, const Origin& origin) = 0;
 
 			//Tell implementeren
 			//virtual void Tell() = 0;

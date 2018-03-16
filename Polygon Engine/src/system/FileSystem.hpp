@@ -7,7 +7,7 @@ namespace engine {
 		class FileSystem {
 
 			//Dynamically allocated
-			File* Open(const Path& path, int mode) const;
+			File* Open(const Path& path, int32 mode) const;
 
 			void Close(const File& file);
 

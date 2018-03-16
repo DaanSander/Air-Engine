@@ -11,7 +11,7 @@ namespace engine {
 			Close();
 		}
 
-		File* File::Open(int mode) {
+		File* File::Open(int32 mode) {
 			std::string strMode;
 
 			if (mode & Mode::READ)
@@ -32,7 +32,7 @@ namespace engine {
 		//Dynamicly allocated
 		void* File::Read() {
 			fseek(m_Handle, 0, SEEK_END);
-			unsigned int length = ftell(m_Handle);
+			uint32 length = ftell(m_Handle);
 			fseek(m_Handle, 0, SEEK_SET);
 
 			char* data = new char[length + 1];
@@ -47,7 +47,7 @@ namespace engine {
 			return this;
 		}
 		
-		File* File::Seek(int offset, const Origin& origin) {
+		File* File::Seek(int32 offset, const Origin& origin) {
 			fseek(m_Handle, offset, origin);
 			return this;
 		}

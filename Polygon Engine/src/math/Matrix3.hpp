@@ -20,20 +20,20 @@ namespace engine {
 			}
 
 			Matrix3(const Matrix3<T>& matrix) {
-				for (unsigned int i = 0; i < 3 * 3; i++)
+				for (uint32 i = 0; i < 3 * 3; i++)
 					m_Elements[i] = matrix.m_Elements[i];
 			}
 
 			Matrix3(T diagonal) {
 				memset(m_Elements, (T)0, sizeof(m_Elements));
 
-				for (unsigned int i = 0; i < 3; i++)
+				for (uint32 i = 0; i < 3; i++)
 					m_Elements(i + i * 3) = diagonal;
 			}
 
 			Matrix3(const Matrix4<T>& mat4) {
-				for (unsigned int y = 0; y < 3; y++) {
-					for (unsigned int x = 0; x < 3; x++) {
+				for (uint32 y = 0; y < 3; y++) {
+					for (uint32 x = 0; x < 3; x++) {
 						m_Elements[x + y * 3] = mat4.m_Elements[x + y * 4];
 					}
 				}
@@ -64,8 +64,8 @@ namespace engine {
 			Matrix3<T> Transpose() const {
 				Matrix3<T> out;
 
-				for (unsigned int y = 0; y < 3; y++) {
-					for (unsigned int x = 0; x < 3; x++) {
+				for (uint32 y = 0; y < 3; y++) {
+					for (uint32 x = 0; x < 3; x++) {
 						out.m_Elements[x + y * 3] = m_Elements[y + x * 3];
 					}
 				}
@@ -76,7 +76,7 @@ namespace engine {
 			Matrix3<T> Negative() const {
 				Matrix3<T> out;
 
-				for (unsigned int i = 0; i < 3 * 3; i++)
+				for (uint32 i = 0; i < 3 * 3; i++)
 					out.m_Elements[i] = -m_Elements[i];
 
 				return out;
@@ -143,7 +143,7 @@ namespace engine {
 			Matrix3<T> Add(const Matrix3<T>& other) const {
 				Matrix3<T> out;
 
-				for (unsigned int i = 0; i < 3 * 3; i++)
+				for (uint32 i = 0; i < 3 * 3; i++)
 					out.m_Elements[i] = m_Elements[i] + other.m_Elements[i];
 
 				return out;
@@ -152,7 +152,7 @@ namespace engine {
 			Matrix3<T> Subtract(const Matrix3<T>& other) const {
 				Matrix3<T> out;
 
-				for (unsigned int i = 0; i < 3 * 3; i++)
+				for (uint32 i = 0; i < 3 * 3; i++)
 					out.m_Elements[i] = m_Elements[i] - other.m_Elements[i];
 
 				return out;
@@ -161,7 +161,7 @@ namespace engine {
 			Matrix3<T> Multiply(T scalar) const {
 				Matrix3<T> out;
 
-				for (int i = 0; i < (3 * 3); i++)
+				for (int32 i = 0; i < (3 * 3); i++)
 					out.m_Elements[i] = m_Elements[i] * scalar;
 
 				return out;
@@ -170,9 +170,9 @@ namespace engine {
 			Matrix3<T> Multiply(const Matrix3<T>& other) const {
 				Matrix3<T> out;
 
-				for (unsigned int y = 0; y < 3; y++) {
-					for (unsigned int x = 0; x < 3; x++) {
-						for (unsigned int c = 0; c < 3; c++) {
+				for (uint32 y = 0; y < 3; y++) {
+					for (uint32 x = 0; x < 3; x++) {
+						for (uint32 c = 0; c < 3; c++) {
 							out.m_Elements[x + y * 3] += m_Elements[c + y * 4] * other.m_Elements[x + c * 4];
 						}
 					}
@@ -184,8 +184,8 @@ namespace engine {
 			Vector3<T> Multiply(const Vector3<T>& vector) const {
 				Vector3<T> out;
 
-				for (unsigned int y = 0; y < 3; y++) {
-					for (unsigned int x = 0; x < 3; x++) {
+				for (uint32 y = 0; y < 3; y++) {
+					for (uint32 x = 0; x < 3; x++) {
 						out.m_Elements[y] = m_Elements[x + y * 3] * vector.m_Elements[x];
 					}
 				}

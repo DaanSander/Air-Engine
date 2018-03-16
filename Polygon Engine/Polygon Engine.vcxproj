@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Common.h" />
+    <ClInclude Include="src\DataTypes.h" />
     <ClInclude Include="src\graphics\Shader.hpp" />
     <ClInclude Include="src\graphics\buffers\VertexArray.hpp" />
     <ClInclude Include="src\graphics\buffers\VertexBuffer.hpp" />
