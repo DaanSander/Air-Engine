@@ -20,10 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{7F1409E7-B45B-4F86-8EE9-E866D9DDA670}</ProjectGuid>
-    <RootNamespace>PolygonEngine</RootNamespace>
+    <ProjectGuid>{893D1E85-BE42-4011-8A88-FFB71C1E9843}</ProjectGuid>
+    <RootNamespace>ASTL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>Air Engine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -70,21 +69,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>$(SolutionDir)\Dependencies\GLFW\build\src\Debug;$(LibraryPath)</LibraryPath>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Dependencies\GLAD\include;$(SolutionDir)\Dependencies\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
-    <Link>
-      <AdditionalDependencies>glfw3.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -123,45 +115,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\graphics\buffers\ElementBuffer.cpp" />
-    <ClCompile Include="src\graphics\buffers\VertexBuffer.cpp" />
-    <ClCompile Include="src\graphics\Shader.cpp" />
-    <ClCompile Include="src\graphics\buffers\VertexArray.cpp" />
-    <ClCompile Include="src\graphics\SimpleRenderer.cpp" />
-    <ClCompile Include="src\system\Logger.cpp" />
-    <ClCompile Include="src\system\Timer.cpp" />
-    <ClCompile Include="src\Window.cpp" />
-    <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\system\BaseFile.cpp" />
-    <ClCompile Include="src\system\File.cpp" />
-    <ClCompile Include="src\system\FileSystem.cpp" />
-    <ClCompile Include="src\InputHandler.cpp" />
-    <ClCompile Include="src\system\Path.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Common.h" />
-    <ClInclude Include="src\DataTypes.h" />
-    <ClInclude Include="src\graphics\buffers\ElementBuffer.hpp" />
-    <ClInclude Include="src\graphics\Shader.hpp" />
-    <ClInclude Include="src\graphics\buffers\VertexArray.hpp" />
-    <ClInclude Include="src\graphics\buffers\VertexBuffer.hpp" />
-    <ClInclude Include="src\graphics\SimpleRenderer.hpp" />
-    <ClInclude Include="src\math\Math.hpp" />
-    <ClInclude Include="src\system\Logger.hpp" />
-    <ClInclude Include="src\system\Timer.hpp" />
-    <ClInclude Include="src\Window.hpp" />
-    <ClInclude Include="src\math\Matrix2.hpp" />
-    <ClInclude Include="src\math\Matrix3.hpp" />
-    <ClInclude Include="src\math\Matrix4.hpp" />
-    <ClInclude Include="src\math\Vector2.hpp" />
-    <ClInclude Include="src\math\Vector3.hpp" />
-    <ClInclude Include="src\math\Vector4.hpp" />
-    <ClInclude Include="src\system\BaseFile.hpp" />
-    <ClInclude Include="src\system\File.hpp" />
-    <ClInclude Include="src\system\FileSystem.hpp" />
-    <ClInclude Include="src\InputHandler.hpp" />
-    <ClInclude Include="src\system\Path.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

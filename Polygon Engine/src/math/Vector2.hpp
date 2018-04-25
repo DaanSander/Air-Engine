@@ -16,7 +16,7 @@ namespace engine {
 				T m_Elements[2];
 			};
 
-			Vector2(T x = 0.0f, T y = 0.0f) {
+			Vector2(T x = 0, T y = 0) {
 				m_X = x;
 				m_Y = y;
 			}
